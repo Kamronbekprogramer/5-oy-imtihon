@@ -178,15 +178,14 @@ main {
 }
 main .hero {
   background: #000;
-  height: 344px;
   margin-top: 170px;
   margin-bottom: 94px;
 }
 main .hero .hero__content {
   display: flex;
-  padding-left: 64px;
   align-items: center;
-  gap: 38px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 main .hero .hero__content .left__content {
   width: 35%;
@@ -275,9 +274,9 @@ main .heading_categ {
 main .catigories__list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 27px;
   margin-top: 60px;
   border-bottom: 1px solid rgb(54, 53, 53);
   padding-bottom: 70px;
@@ -328,6 +327,7 @@ main .catigories__list .list:hover p {
     width: 100% !important;
   }
   .header .top__header {
+    display: none;
     position: fixed;
     top: 0;
     width: 100%;
@@ -374,7 +374,6 @@ main .catigories__list .list:hover p {
   .header .navbar {
     margin-bottom: 40px;
     position: fixed;
-    top: 50px;
     z-index: 100;
     width: 100%;
     height: 100px;
@@ -383,7 +382,6 @@ main .catigories__list .list:hover p {
   }
   .header .navbar .navigation {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 100px;
   }
@@ -639,70 +637,6 @@ main .catigories__list .list:hover p {
   max-width: 100%;
   border-top: 1px solid black;
 }
-.section .vaucher_card {
-  display: flex;
-  margin-top: 40px;
-  padding-left: 64px;
-  align-items: center;
-  gap: 20px;
-  height: 344px;
-  background: var(--Text2, #000);
-}
-.section .vaucher_card .apple_14 {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  gap: 20px;
-}
-.section .vaucher_card .apple_14 img {
-  width: 40px;
-  height: 49px;
-}
-.section .vaucher_card .apple_14 h2 {
-  color: var(--Text, #fafafa);
-  text-align: center;
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-.section .vaucher_card h1 {
-  color: var(--Text, #fafafa);
-  margin-bottom: 20px;
-  font-family: Inter;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 60px;
-  letter-spacing: 1.92px;
-}
-.section .vaucher_card .shop__now {
-  display: flex;
-  position: relative;
-  align-items: center;
-}
-.section .vaucher_card .shop__now .__now {
-  color: var(--Text, #fafafa);
-  align-items: center;
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-}
-.section .vaucher_card .__now::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 1.5px;
-  background-color: rgb(250, 247, 247);
-  transition: width 0.3s ease;
-}
-.section .vaucher_card .__now:hover::before {
-  width: 30%;
-}
 .section .vaucher_img {
   margin-left: 80px;
 }
@@ -783,18 +717,18 @@ main .catigories__list .list:hover p {
 }
 .section .products .product__card {
   display: flex;
+  flex-wrap: wrap !important;
   margin-top: 60px;
 }
 .section .products .product__card .wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 47px;
+  display: flex;
+  flex-wrap: wrap !important;
+  justify-content: space-between;
 }
 .section .products .product__card .__card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
+  align-items: center;
 }
 .section .products .product__card .__card .img {
   width: 270px;
@@ -909,7 +843,6 @@ main .catigories__list .list:hover p {
   align-items: center;
   gap: 10px;
   border: none;
-  margin-left: 500px;
   margin-top: 60px;
   border-radius: 4px;
   background: var(--Button2, #db4444);
@@ -927,10 +860,10 @@ main .catigories__list .list:hover p {
   cursor: pointer;
 }
 .section .music {
-  width: 1220px;
   display: flex;
-  height: 500px;
   margin-top: 70px;
+  justify-content: center;
+  flex-wrap: wrap;
   flex-shrink: 0;
   background: var(--Button, #000);
 }
@@ -1060,18 +993,17 @@ main .catigories__list .list:hover p {
 }
 .section .featured .arrial__cards {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 60px;
   gap: 30px;
 }
 .section .featured .arrial__cards .left__cards {
-  width: 570px;
-  height: 600px;
   border-radius: 4px;
   background: var(--Button, #000);
 }
 .section .featured .arrial__cards .left__cards img {
-  width: 511px;
-  height: 511px;
+  width: 450px;
+  height: 450px;
   flex-shrink: 0;
   margin-top: 89px;
   margin-left: 29px;
@@ -1110,7 +1042,6 @@ main .catigories__list .list:hover p {
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
   line-height: 24px; /* 150% */
 }
 .section .featured .arrial__cards .left__cards .playstation__text .shop__cards::before {
@@ -1127,11 +1058,10 @@ main .catigories__list .list:hover p {
   width: 100%;
 }
 .section .featured .arrial__cards .right__cards .__top {
-  width: 600px;
-  height: 284px;
   border-radius: 4px;
   background: #0d0d0d;
   display: flex;
+  flex-wrap: wrap;
 }
 .section .featured .arrial__cards .right__cards .__top img {
   margin-left: 154px;
@@ -1139,6 +1069,7 @@ main .catigories__list .list:hover p {
 .section .featured .arrial__cards .right__cards .__top .top__text {
   padding-top: 138px;
   margin-left: -550px;
+  flex-wrap: wrap;
   z-index: 555;
 }
 .section .featured .arrial__cards .right__cards .__top .top__text h1 {
@@ -1307,7 +1238,7 @@ main .catigories__list .list:hover p {
 }
 .section .service {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 95px;
   margin-top: 140px;
   text-align: center;
@@ -1315,6 +1246,7 @@ main .catigories__list .list:hover p {
 }
 .section .service img {
   margin-bottom: 16px;
+  margin-top: 20px;
 }
 .section .service img h4 {
   color: #000;
@@ -1335,6 +1267,9 @@ main .catigories__list .list:hover p {
   font-style: normal;
   font-weight: 400;
   line-height: 21px; /* 150% */
+}
+.section .service button {
+  align-items: center;
 }
 
 footer {
@@ -1419,4 +1354,67 @@ footer .bottom__footer p {
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
+}
+
+@media screen and (max-width: 1170px) {
+  .nav__list {
+    display: none !important;
+  }
+  .flex__top-header__text {
+    font-size: 10px !important;
+    font-weight: 300px;
+  }
+}
+@media screen and (max-width: 768.9px) {
+  .product__card {
+    display: block !important;
+    flex-wrap: wrap !important;
+  }
+  .product__card .wrapper {
+    display: block !important;
+  }
+  .navbar {
+    margin-top: -50px;
+  }
+  .view__all {
+    justify-content: flex-start !important;
+  }
+  .music {
+    max-width: 100%;
+    display: block !important;
+    flex-wrap: wrap !important;
+  }
+  .music h1 {
+    font-size: 16px !important;
+  }
+  .music .data {
+    max-width: 100%;
+    flex-wrap: wrap !important;
+  }
+  .music .music__img {
+    display: none;
+  }
+  .arrial__cards {
+    max-width: 100% !important;
+    flex-wrap: wrap !important;
+  }
+  .arrial__cards .__bottom {
+    display: block !important;
+    flex-wrap: wrap !important;
+  }
+  .arrial__cards .__bottom .speakers {
+    margin-bottom: 20px !important;
+  }
+  .arrial__cards .__bottom .__top {
+    max-width: 100% !important;
+    display: block !important;
+    flex-wrap: wrap !important;
+  }
+  .arrial__cards .__bottom .__top img {
+    margin-left: 0 !important;
+    display: block !important;
+  }
+  .service {
+    display: block !important;
+  }
 }/*# sourceMappingURL=index.css.map */

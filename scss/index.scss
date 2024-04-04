@@ -187,14 +187,15 @@ main {
   width: 100%;
   .hero {
     background: #000;
-    height: 344px;
     margin-top: 170px;
     margin-bottom: 94px;
     .hero__content {
       display: flex;
-      padding-left: 64px;
+      // padding-left: 64px;
       align-items: center;
-      gap: 38px;
+      justify-content: center;
+      flex-wrap: wrap;
+      // gap: 38px;
       .left__content {
         width: 35%;
         height: 100%;
@@ -289,9 +290,9 @@ main {
   .catigories__list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 27px;
     margin-top: 60px;
     border-bottom: 1px solid rgb(54, 53, 53);
     padding-bottom: 70px;
@@ -356,6 +357,7 @@ main {
   .header {
     width: 100% !important;
     .top__header {
+      display: none;
       position: fixed;
       top: 0;
       width: 100%;
@@ -402,7 +404,7 @@ main {
     .navbar {
       margin-bottom: 40px;
       position: fixed;
-      top: 50px;
+      // top: 50px;
       z-index: 100;
       width: 100%;
       height: 100px;
@@ -411,7 +413,7 @@ main {
         0px 0px 80px rgba(0, 0, 0, 0.07);
       .navigation {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         align-items: center;
         height: 100px;
 
@@ -592,6 +594,8 @@ main {
         }
       }
     }
+
+    
   }
   // ============================ Header End ==========================
   main {
@@ -608,11 +612,6 @@ main {
         flex-direction: column;
         padding-left: 0px !important;
         .left__content {
-          // width: 35%;
-          // height: 100%;
-          // padding-top: 58px;
-          // padding-bottom: 47px;
-          // padding-left: 64px;
           width: 100% !important;
           padding: 10px !important;
           &-head {
@@ -695,79 +694,6 @@ main {
   max-width: 100%;
   border-top: 1px solid black;
 
-  .vaucher_card {
-    display: flex;
-    margin-top: 40px;
-    padding-left: 64px;
-    align-items: center;
-    gap: 20px;
-    height: 344px;
-    background: var(--Text2, #000);
-
-    .apple_14 {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-      gap: 20px;
-
-      img {
-        width: 40px;
-        height: 49px;
-      }
-
-      h2 {
-        color: var(--Text, #fafafa);
-        text-align: center;
-
-        font-family: Poppins;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px; 
-      }
-    }
-
-    h1 {
-      color: var(--Text, #fafafa);
-      margin-bottom: 20px;
-
-      font-family: Inter;
-      font-size: 48px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 60px; 
-      letter-spacing: 1.92px;
-    }
-
-    .shop__now {
-      display: flex;
-      position: relative;
-      align-items: center;
-
-      .__now {
-        color: var(--Text, #fafafa);
-        align-items: center;
-        font-family: Poppins;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-      }
-    }
-    .__now::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0;
-      height: 1.5px;
-      background-color: rgb(250, 247, 247);
-      transition: width 0.3s ease;
-    }
-
-    .__now:hover::before {
-      width: 30%;
-    }
-  }
   .vaucher_img {
     margin-left: 80px;
   }
@@ -864,19 +790,22 @@ main {
 
     .product__card {
       display: flex;
+      flex-wrap: wrap !important;
       margin-top: 60px;
 
       .wrapper {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 47px;
+        display: flex;
+        flex-wrap: wrap !important;
+        justify-content: space-between;
+        // grid-template-columns: repeat(4, 1fr);
+        // gap: 47px;
       }
 
       .__card {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
+        align-items: center;
+        // gap: 16px;
 
         .img {
           width: 270px;
@@ -1007,7 +936,7 @@ main {
       gap: 10px;
       border: none;
 
-      margin-left: 500px;
+      // margin-left: 500px;
       margin-top: 60px;
       border-radius: 4px;
       background: var(--Button2, #db4444);
@@ -1030,10 +959,12 @@ main {
   }
 
   .music {
-    width: 1220px;
+    // width: 1220px;
     display: flex;
-    height: 500px;
+    // height: 500px;
     margin-top: 70px;
+    justify-content: center;
+    flex-wrap: wrap;
     flex-shrink: 0;
     background: var(--Button, #000);
 
@@ -1182,18 +1113,19 @@ main {
 
     .arrial__cards {
       display: flex;
+      flex-wrap: wrap;
       margin-top: 60px;
       gap: 30px;
 
       .left__cards {
-        width: 570px;
-        height: 600px;
+        // width: 570px;
+        // height: 600px;
         border-radius: 4px;
         background: var(--Button, #000);
 
         img {
-          width: 511px;
-          height: 511px;
+          width: 450px;
+          height: 450px;
           flex-shrink: 0;
           margin-top: 89px;
           margin-left: 29px;
@@ -1238,7 +1170,7 @@ main {
             font-family: Poppins;
             font-size: 16px;
             font-style: normal;
-            font-weight: 500;
+            // font-weight: 500;
             line-height: 24px; /* 150% */
           }
 
@@ -1261,11 +1193,12 @@ main {
 
       .right__cards {
         .__top {
-          width: 600px;
-          height: 284px;
+          // width: 600px;
+          // height: 284px;
           border-radius: 4px;
           background: #0d0d0d;
           display: flex;
+          flex-wrap: wrap;
 
           img {
             // width: 100%;
@@ -1276,6 +1209,7 @@ main {
             padding-top: 138px;
             margin-left: -550px;
             // padding-left: 24px;
+            flex-wrap: wrap;
             z-index: 555;
             // display: flex;
             h1 {
@@ -1478,7 +1412,8 @@ main {
 
   .service {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    // padding-top: 20px;
     gap: 95px;
     margin-top: 140px;
     text-align: center;
@@ -1488,6 +1423,7 @@ main {
       // align-items: center;
       // justify-content: center;
       margin-bottom: 16px;
+      margin-top: 20px;
 
       h4 {
         color: #000;
@@ -1513,6 +1449,9 @@ main {
         font-weight: 400;
         line-height: 21px; /* 150% */
       }
+    }
+    button {
+      align-items: center;
     }
   }
 }
@@ -1619,5 +1558,83 @@ footer {
 }
 
 
+@media screen and (max-width: 1170px) {
+  .nav__list {
+    display: none !important;
+  }
 
+  .flex__top-header__text {
+    font-size: 10px !important;
+    font-weight: 300px;
+  }
+}
+
+
+@media screen and (max-width: 768.9px) {
+  .product__card {
+    display: block !important;
+    flex-wrap: wrap !important;
+
+    .wrapper {
+      display: block !important;
+    }
+  }
+
+  .navbar {
+    margin-top: -50px;
+  }
+
+  .view__all {
+    justify-content: flex-start !important;
+  }
+
+  .music {
+    max-width: 100%;
+    display: block !important;
+    flex-wrap: wrap !important;
+
+    h1 {
+      font-size: 16px !important;
+    }
+
+    .data {
+      max-width: 100%;
+      // display: block !important;
+      flex-wrap: wrap !important;
+    }
+    .music__img {
+      display: none;
+    }
+  }
+
+  .arrial__cards {
+    max-width: 100% !important;
+    flex-wrap: wrap !important;
+
+    .__bottom {
+      display: block !important;
+      flex-wrap: wrap !important;
+
+      .speakers {
+        margin-bottom: 20px !important;
+      }
+
+      .__top {
+        max-width: 100% !important;
+        display: block !important;
+        flex-wrap: wrap !important;
+
+        img {
+          margin-left: 0 !important;
+          display: block !important;
+        }
+      }
+    }
+  }
+
+
+  .service {
+    display: block !important;
+  }
+}
 
