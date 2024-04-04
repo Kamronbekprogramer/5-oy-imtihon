@@ -21,102 +21,149 @@
     <title>Exclusive</title>
   </head>
   <body>
-    <header class="header">
-      <div class="top__header">
-        <h2>
-          Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
-        </h2>
-        <a class="shop" href="#">ShopNow</a>
-        <select name="language" id="">
-          <option value="english">English</option>
-          <option value="uzbek">O'zbek</option>
-          <option value="russia">Россия</option>
-        </select>
-      </div>
-      <div class="container">
-        <div class="bottom__header">
-          <div class="logo">
-            <a href="./index.html"
-              ><img class="nav__logo" src="./images/img/Logo (1).png" alt=""
-            /></a>
-          </div>
-          <div class="nav_link_list">
-            <a href="./index.html" class="nav__link">Home</a>
-            <a href="" class="nav__link">Contact</a>
-            <a href="" class="nav__link">About</a>
-            <a href="./pages/login.html" class="nav__link">Sign in</a>
-          </div>
-          <div class="buttons__card">
-            <div class="input">
-              <div class="search__input">
-                <input type="search" placeholder="What are you looking for?" />
-              </div>
-              <div class="search__input">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
+    
+      <header class="header">
+        <div class="top__header">
+          <div class="container">
+            <div class="flex__top">
+              <div class="left__top">
+                <span class="flex__top-header__text"
+                  >Summer Sale For All Swim Suits And Free Express Delivery - OFF
+                  50%!</span
                 >
-                  <path
-                    d="M20 20L16.2223 16.2156M18.3158 11.1579C18.3158 13.0563 17.5617 14.8769 16.2193 16.2193C14.8769 17.5617 13.0563 18.3158 11.1579 18.3158C9.2595 18.3158 7.43886 17.5617 6.0965 16.2193C4.75413 14.8769 4 13.0563 4 11.1579C4 9.2595 4.75413 7.43886 6.0965 6.0965C7.43886 4.75413 9.2595 4 11.1579 4C13.0563 4 14.8769 4.75413 16.2193 6.0965C17.5617 7.43886 18.3158 9.2595 18.3158 11.1579V11.1579Z"
-                    stroke="black"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                  />
-                </svg>
+                <a href="#" class="top-header__link">ShopNow</a>
+              </div>
+              <div class="right__top">
+                <select>
+                  <option value="lang" selected>Language</option>
+                  <option value="en">Ingiliz tili</option>
+                  <option value="ru">Rus Tili</option>
+                  <option value="uz">Uzbek Tili</option>
+                </select>
               </div>
             </div>
-            <svg
-              id="like"
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-            >
-              <path
-                d="M11 7C8.239 7 6 9.216 6 11.95C6 14.157 6.875 19.395 15.488 24.69C15.6423 24.7839 15.8194 24.8335 16 24.8335C16.1806 24.8335 16.3577 24.7839 16.512 24.69C25.125 19.395 26 14.157 26 11.95C26 9.216 23.761 7 21 7C18.239 7 16 10 16 10C16 10 13.761 7 11 7Z"
-                stroke="red"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-
-            <img src="./images/img/shop-icon.svg" alt="" />
-           
           </div>
         </div>
-      </div>
-    </header>
+        <nav class="navbar">
+          <div class="container">
+            <div class="navigation">
+              <a href="./index.html" class="logo__link">
+                <img src="./images/img/Logo (1).png" alt="site logo" class="logo"
+              /></a>
+              <ul class="nav__list">
+                <li class="nav__list-items">
+                  <a href="./index.html" class="nav__list-items__link">Home</a>
+                </li>
+                <li class="nav__list-items">
+                  <a href="#" class="nav__list-items__link">Contact</a>
+                </li>
+                <li class="nav__list-items">
+                  <a href="#" class="nav__list-items__link">About</a>
+                </li>
+                <li class="nav__list-items">
+                  <a href="#" class="nav__list-items__link">Sign in</a>
+                </li>
+              </ul>
+              <div class="form__nav">
+                <div class="input__search">
+                  <input
+                    type="search"
+                    name="search"
+                    id="search"
+                    placeholder="Search..."
+                  />
+                  <button class="btn__searchs">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+                <button type="button" class="nav__icons">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button type="button" class="nav__icons">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+                <button type="button" class="nav__bars">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+
+        <menu class="menu__navbar">
+          <div class="container">
+            <div class="menu__navigation">
+              <ul class="menu__list">
+                <li class="menu__list-items">
+                  <a href="#" class="menu__list-items__link">Home</a>
+                </li>
+                <li class="menu__list-items">
+                  <a href="#" class="menu__list-items__link">Contact</a>
+                </li>
+                <li class="menu__list-items">
+                  <a href="#" class="menu__list-items__link">About</a>
+                </li>
+                <li class="menu__list-items">
+                  <a href="#" class="menu__list-items__link">Sign in</a>
+                </li>
+              </ul>
+              <div class="form__menu">
+                <div class="input__search">
+                  <input
+                    type="search"
+                    name="search"
+                    id="search"
+                    class="search"
+                    placeholder="Search..."
+                  />
+                  <button class="btn__sear">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </menu>
+      </header>
+      <!-- Header -->
+      <main>
+        <div class="container">
+          <div class="hero">
+            <div class="hero__content">
+              <div class="left__content">
+                <div class="left__content-head">
+                  <img
+                    class="content-head__img"
+                    src="images/img/link-img.png"
+                    alt="link-img"
+                  />
+                  <span class="content-head__text">iPhone 14 Series</span>
+                </div>
+                <div class="left__content-body">
+                  <h1 class="left__content-body__heading">
+                    Up to 10% off Voucher
+                  </h1>
+                  <a href="#" class="left__content-body__link"
+                    >Shop Now <span><i class="fa-solid fa-arrow-right"></i></span
+                  ></a>
+                </div>
+              </div>
+              <div class="right__content">
+                <img
+                  src="./images/img/vaucher iphone.png"
+                  class="iphone-img"
+                  alt="hero images"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
     
     <section class="section">
       <div class="container">
         <div class="loader">
           <img src="./images/img/lazyload.gif" alt="">
-        </div>
-        <div class="vaucher_card">
-          <div class="vaucher_text">
-            <div>
-              <div class="apple_14">
-                <img src="./images/img/link-img.png" alt="" />
-                <h2>iPhone 14 Series</h2>
-              </div>
-              <h1>
-                Up to 10% <br />
-                off Voucher
-              </h1>
-            </div>
-            <div class="shop__now">
-              <a class="__now" href="https://www.apple.com/"> Shop Now </a>
-              <img src="./images/icons/icons arrow-right.svg" alt="" />
-            </div>
-          </div>
-          <div class="vaucher_img">
-            <img src="./images/img/vaucher iphone.png" alt="" />
-          </div>
         </div>
         <div class="catigories">
           <div class="__catigoriya">
@@ -677,7 +724,7 @@
             <a href="#"><img src="./images/img/Frame 719.png" alt="" /></a>
             <div class="logo__link">
               <a href="#"><img src="./images/img/Frame 741.png" alt="" /></a>
-            </div>
+            </div> 
           </div>
         </div>
         <div class="bottom__footer">

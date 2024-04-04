@@ -5,24 +5,17 @@ const API_URL = "https://dummyjson.com/products";
 var svg = document.getElementById('like');
 var isClicked = false;
 
-svg.addEventListener('click', function() {
-  if (!isClicked) {
-    this.querySelector('path').setAttribute('fill', 'red');
-    isClicked = true;
-  } else {
-    this.querySelector('path').setAttribute('fill',  'transparent');
-    isClicked = false;
-  }
-});
 
 
 
-async function fetchData(api) {
+async function fetchData(API_URL) {
   try {
+    console.log("Hello world");
     loader.style.display = "block"; 
-    const getData = await fetch(api);
+    const getData = await fetch(API_URL);
     const responseData = await getData.json();
     createCard(responseData.products.slice(0, 8));
+    console.log(responseData.products.slice(0, 8));
   } catch (error) {
     console.error(error);
   } finally {
@@ -31,7 +24,7 @@ async function fetchData(api) {
 }
 
 
-fetchData(API_URL);
+fetchData(API_URL).catch(data => data.json())
 
 function createCard(data) {
   const fragment = document.createDocumentFragment();
@@ -71,3 +64,10 @@ wrapper.addEventListener("click", (e) => {
     singleRoate(id)
   }
 })
+
+const btnBars = document.querySelector(".nav__bars");
+const menuNav = document.querySelector(".menu__navbar");
+
+btnBars.addEventListener("click", () => {
+  menuNav.classList.toggle("show");
+});
